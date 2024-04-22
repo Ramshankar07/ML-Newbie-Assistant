@@ -1,9 +1,11 @@
 import pandas as pd
 import os
-import Streamlit as st
+import streamlit as st
 from crewai import Crew
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
+from tasks import ProjectTasks
+from agents import ProjectAgents
 
 load_dotenv()
 groq_api_key = os.getenv("GROQ_API_KEY")
