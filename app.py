@@ -8,7 +8,7 @@ from tasks import ProjectTasks
 from agents import ProjectAgents
 
 load_dotenv()
-groq_api_key = os.getenv("GROQ_API_KEY")
+groq_api_key = st.secrets['GROQ_API_KEY']
 
 def main():
     # Setting the title and description 
